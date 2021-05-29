@@ -4,6 +4,7 @@ from django.forms import modelform_factory
 # Create your views here.
 from .models import Meeting
 from .models import Room
+from .forms import MeetingForm
 
 
 def detail(request, id):
@@ -18,9 +19,6 @@ def room(request, id):
 
 def rooms_list(request):
     return render(request, "meetings/rooms_list.html", {"rooms": Room.objects.all()})
-
-
-MeetingForm = modelform_factory(Meeting, exclude=[])
 
 
 def new(request):
