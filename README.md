@@ -1,5 +1,4 @@
-# meeting_planner
+# Meeting Planner - Django Sample Project
 
-Course Name - Django: Getting Started
-
-By Reindert-Jan Ekker
+##Course Name - Django: Getting Started on Pluralsight
+### - By Reindert-Jan Ekk er

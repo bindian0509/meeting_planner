@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Trained Armed Force Professional</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %} Welcome to the world of meeting planners{% endblock %}
+{% block content %}
 <h1> Welcome to Meeting Planner Page!!!</h1>
 <p>
     This is a demo application for the course <em> GETTING STARTED WITH DJANGO!!!</em>
@@ -12,7 +8,6 @@
 </p>
 
 <h2> Total Meetings</h2>
-
 <ul>
     {% for meeting in meetings %}
     <li>
@@ -30,8 +25,5 @@
     </li>
     {% endfor %}
 </ul>
-
-
 <h3>Know more <a href="{% url 'about_me' %}">about me!</a></h3>
-</body>
-</html>
+{% endblock %}
